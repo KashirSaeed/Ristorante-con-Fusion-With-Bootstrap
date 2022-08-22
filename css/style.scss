@@ -1,0 +1,98 @@
+// Color
+$Its-gray: #ddd;
+$backgroung-dark:  #512DA8;   
+$backgroung-light: #9575CD;
+$backgroung-pale: #D1C4E9;
+
+// Heights
+$carousel-item-height: 300px; 
+// Maxin
+@mixin zero-margin($padding-up-down , $padding-left-right  ) {
+    margin: 0px auto;
+    padding: $padding-up-down $padding-left-right;
+}
+      
+.row-header{
+    @include zero-margin(0px, 0px);   
+}
+
+.row-content{
+   @include zero-margin(50px, 0px);
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.footer{
+    @include zero-margin(20px, 0px);
+    background-color: $backgroung-pale;
+}
+
+.jumbotron{   
+   @include zero-margin(70px, 30px);
+    background-color: $backgroung-light;
+    color: floralwhite;
+}
+        
+.address{
+    margin: 0px auto;
+    font-size: 80%;
+    color: #0f0f0f; 
+}
+
+body{
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark{
+    background-color: $backgroung-dark;
+}
+
+.counting{
+    display: inline
+}
+
+#reserveTableButtonId{
+    text-decoration: none;
+}
+
+.tab-content{
+    border-right: 1px solid $Its-gray;
+    border-left: 1px solid $Its-gray;
+    border-bottom: 1px solid $Its-gray;
+    padding: 10px;
+}
+
+.carousel {
+    background:$backgroung-dark;
+    .carousel-item {
+        height: $carousel-item-height;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: 300px;
+        }
+    }
+
+}
+
+
+#carouselButton{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.modal-header{
+    background-color:$backgroung-dark;
+    color:floralwhite;
+    button {
+        color:floralwhite;
+    }
+}
+
+.modal-body{
+    background-color:$backgroung-pale;
+}
